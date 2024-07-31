@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parking_MAUI.Connexion"
+             Title="Connexion">
+
+    <VerticalStackLayout BackgroundColor="White" Padding="30" Spacing="20">
+        <Frame CornerRadius="10" BorderColor="LightGray" Padding="10" HasShadow="True">
+            <Entry x:Name="Matricule_text" 
+                   Placeholder="Matricule Agent" 
+                   PlaceholderColor="Gray" 
+                   TextColor="Black" 
+                   BackgroundColor="White" />
+        </Frame>
+
+        <Frame CornerRadius="10" BorderColor="LightGray" Padding="10" HasShadow="True">
+            <Entry x:Name="Password_text" 
+                   Placeholder="Mot de passe" 
+                   PlaceholderColor="Gray" 
+                   TextColor="Black" 
+                   BackgroundColor="White" 
+                   IsPassword="True" />
+        </Frame>
+
+        <Button Text="Se connecter" 
+                TextColor="White" 
+                BackgroundColor="DodgerBlue" 
+                Clicked="OnButtonClicked" 
+                CornerRadius="10" 
+                Padding="10" />
+    </VerticalStackLayout>
+</ContentPage>
